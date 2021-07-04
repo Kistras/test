@@ -1,7 +1,5 @@
 num = int(input("Input your number: "))
-if num <= 0:
-	print("Number should be bigger than 0.")
-	exit()
+assert num > 0, "Number should be bigger than 0"
 
 while num != 0:
 	if num % 2 == 0:
